@@ -1,0 +1,99 @@
+<html>
+<head>
+  <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = 
+        document.getElementById("createtask").value;
+	    document.getElementById('display1').innerHTML = 
+        document.getElementById("date").value;
+    }
+
+		
+
+
+</script>
+<style>
+select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 500px;
+}
+input[type=text],[type=date], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left:50px;
+}
+
+.button {
+    background-color: #1E90FF; 
+    border: 2px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius:26px;
+   
+    
+}
+
+.button1 {
+    background-color: #1E90FF; 
+    border: 2px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius:26px;
+   
+    
+}
+</style>
+
+  </head>
+<body>
+<div class="container">
+			<div class="row">
+				<div class="col-md-12" style="background-color:#1E90FF; height:70px; margin:35px 155px 15px 15px;"> <marquee direction="right">
+					<h1><b>W<font color="white">O</font>RK TO DO</b> </h1></marquee>
+				</div>
+			</div>
+	</div>
+	
+  <form id="form1">
+ <font face="gabriola" size="5">  
+&nbsp;&nbsp;&nbsp;&nbsp;<b> Enter task : </b> &nbsp;&nbsp; <input type="text" name="task" id="createtask" size="50px">	<br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp; <b>Date of Task : </b> <input type="date" name="ddate" id="date">
+</font>  </form>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" class="button1" onclick="showInput();">
+  
+  <br>
+  <br>
+  <label><font face="gabriola" size="5"><hr width="40%"> <center> <b>List of task to do</b> </center> <hr width="40%"></font></label>
+  <br> <p>Task 1 :  <span id='display'> </span>
+      <span id='display1'> </span>
+		
+
+
+</body>
+</html>
